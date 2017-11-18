@@ -1,0 +1,10 @@
+/* Pour mieux voir les images uploadées */
+.dz-image-responsive {
+  width: 100%;
+}
+
+/* Pour rendre une image responsives */
+.img-resp {
+  width: 100%;
+  height: auto;
+}
