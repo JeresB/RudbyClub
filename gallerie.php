@@ -7,9 +7,9 @@
   <body>
     <?php include_once('templates/navbar.php'); ?>
     <?php //include_once('templates/message.php'); ?>
-
+    <main>
     <div class="ui container">
-      <h1 class="ui center aligned header"><i class="fa fa-picture-o" aria-hidden="true"></i> Gallerie photos</h1>
+      <h1 class="ui center dividing aligned header"><i class="fa fa-picture-o" aria-hidden="true"></i> Gallerie photos</h1>
       <div class="ui stacked segment">
         <div id="Glide" class="glide">
           <div class="glide__arrows">
@@ -29,6 +29,7 @@
         </div>
       </div>
     </div>
+  </main>
   </body>
 
   <?php include_once('templates/footer.html'); ?>

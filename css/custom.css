@@ -8,3 +8,17 @@
   width: 100%;
   height: auto;
 }
+
+/* Pour rendre une image responsives seulement lorsqu'elle depase son conteneur */
+.img-resp-max {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  min-height: calc(100vh - 269px);
+}
+
+.clear-margin {
+  margin: 0px 0px 0px 0px!important;
+}
