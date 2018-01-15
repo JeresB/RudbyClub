@@ -1,0 +1,128 @@
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  /*height: 100%;*/
+  margin-bottom: 60px;
+  margin-top: 7%;
+  height:auto;
+  min-width: 50%;
+  min-height: 20%;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  /*z-index: 10;*/
+  max-width : 100%;
+  min-height : 20%;
+  height : auto;
+  font-size : 50%;
+}
+
+.carousel-caption:h1
+{
+   font-size: 2em;
+    font-weight: normal;
+}
+
+/* Declare heights because of positioning of img element */
+.item {
+  background-color: #777;
+
+
+}
+.carousel-inner > .item> img {
+  /*position: absolute;*/
+  display: block;
+  /*top: auto;*/
+  left: 0;
+  min-width: 100%;
+  min-height: 20%;
+  top: 0;
+  height: auto;
+}
+
+#partenaire
+{
+ margin-top : 10%;
+}
+
+#innerbis
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 350px;
+  height: 200px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+
+/* actu carousel */
+
+
+/* Removes the default 20px margin and creates some padding space for the indicators and controls */
+.carousel {
+  margin-top: 50px;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+	left: -12px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: 0px;
+	margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+	background: #c0c0c0;
+}
+.carousel-indicators .active {
+background: #333333;
+}

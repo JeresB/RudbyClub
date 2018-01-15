@@ -1,0 +1,7 @@
+#sponsor {
+    min-height: 750px;
+    min-width: 100px;
+    background: url(../images/PartenairesSponsors.jpg) no-repeat center; 
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}

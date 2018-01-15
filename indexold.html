@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Club of soccer of l'étoile de Saint Laurent Brest">
+    <meta name="author" content="Development by digital design">
+
+    <title>Etoile Saint-Laurent</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    
+    <!-- BANNIERE -->
+    <div class = "container-fluid">
+        <div class = "row banniere">
+            <!-- Bouton de l'interface administrateur -->
+            <div class = "col-xs-12">
+                <div class ="pull-right">
+                    <button id = "boutonAdmin" type="button" class="btn btn-success">Admin</button>
+                </div>
+            </div>
+            <!-- Logo de la bannière -->
+            <div class = "col-xs-2 logo">
+                <img src="images/logo3.png" style="max-width:100%; height:auto;">
+            </div>
+            <!-- Titre de la bannière -->
+            <div class = "col-xs-10">
+                
+                <h1>ETOILE SAINT-LAURENT</h1>
+                <h3>SECTION FOOTBALL</h3>
+            </div>
+        </div>
+    </div>
+    
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Etoile Saint-Laurent</a>
+            </div>
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="about.html">Le club</a></li>
+                    <li>
+                        <a id = "Sénior A" class = "lien-equipe" href="#">Sénior</a> <!-- j'ai laissé le lien à senior A mais faudra changer à sénior-->
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Foot jeunes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="U19.php">U19</a></li> <!--blog-home-1.html-->
+                            <li><a href="U17.php">U17</a></li> <!--blog-home-2.html-->
+                            <li><a href="U15.php">U15</a></li> <!--blog-post.html-->
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ecole de foot <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">U13</a></li> <!--blog-home-1.html-->
+                            <li><a href="#">U11</a></li> <!--blog-home-2.html-->
+                            <li><a href="#">U9</a></li> <!--blog-post.html-->
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Divers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Challenge Paul Vaillant</a></li> <!--full-width.html-->
+                            <li><a href="#">Challenge Gouriou-Talec</a></li> <!--sidebar.html-->
+                            <!--<li><a href="faq.html">FAQ</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="pricing.html">Pricing Table</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- HEADER CAROUSEL -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('images/.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>L'équipe</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('images/.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Les plus jeunes</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('images/.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>L'entrainement</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <!-- EXPLICATION DU CLUB -->
+    <div class="container">
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Bienvenue sur le site du club de foot de l'étoile Saint-Laurent
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-futbol-o"></i> ESL</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="about.html" class="btn btn-default">Le club</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-users"></i> Seniors </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-users"></i> Jeunes </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- PORTFOLIO SECTION -->
+<!--        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Portfolio Heading</h2>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+        </div>        -->
+        <!-- /.row -->
+
+        <!-- Features Section -->
+<!--        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Modern Business Features</h2>
+            </div>
+            <div class="col-md-6">
+                <p>The Modern Business template by Start Bootstrap includes:</p>
+                <ul>
+                    <li><strong>Bootstrap v3.3.7</strong>
+                    </li>
+                    <li>jQuery v1.11.1</li>
+                    <li>Font Awesome v4.2.0</li>
+                    <li>Working PHP contact form with validation</li>
+                    <li>Unstyled page elements for easy customization</li>
+                    <li>17 HTML pages</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+            </div>
+        </div>        -->
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Call to Action Section -->
+<!--        <div class="well">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+    </div>        -->
+    <!-- /.container -->
+    
+    <!-- API GOOGLE MAPS -->
+    <div class="container">
+        <iframe width="1100" height="400" frameborder="0" style="border:0" 
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJDzFJuJK7FkgRzTBw3bj9Q10&key=AIzaSyDpllGeogHzonw_ZyL7XAIsndgEngAXbyQ" allowfullscreen>
+        </iframe> 
+        <hr>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer1">
+        <div class="container-fluid">
+            <div class="row"> 
+                
+                <!-- COLONNE 1 FOOTER -->
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <ul class="list-unstyled clear-margins">
+                        <li class="widget-container widget_nav_menu">
+                            <h1 class="title-widget">Aller vers</h1>
+                            <ul>
+                            	<li><a  href="#"><i class="fa fa-angle-double-right"></i> Accueil</a></li>
+                            	<li><a  href="bureau.html"><i class="fa fa-angle-double-right"></i> Bureau</a></li>
+                                <li><a  href="#"><i class="fa fa-angle-double-right"></i> Photos</a></li>
+                                <li><a  href="partenaire.html"><i class="fa fa-angle-double-right"></i> Nos partenaires</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- COLONNE 2 FOOTER -->
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <ul class="list-unstyled clear-margins">
+                    	<li class="widget-container widget_nav_menu">
+                            <h1 class="title-widget">Divers</h1>
+                            <ul>
+ 								<li><a  href="#"><i class="fa fa-angle-double-right"></i>  Actualités</a></li>
+                                <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Agenda</a></li>
+                                <li><a  href="boutique.html"><i class="fa fa-angle-double-right"></i>  Boutique</a></li>
+                                <li><a href="terrain.html"><i class="fa fa-angle-double-right"></i> Terrains</a></li>
+                            </ul>
+            			</li>
+                    </ul>
+                </div>
+                
+                <!-- COLONNE 3 FOOTER --> 
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <ul class="list-unstyled clear-margins">
+                    	<li class="widget-container widget_nav_menu">
+                            <h1 class="title-widget">Le site</h1>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-angle-double-right"></i> Mentions légales</a></li>
+ 			                    	<li><a href="chartre.html"><i class="fa fa-angle-double-right"></i> Charte de confidentialité</a></li>
+			                    	<li><a href="stade.html"><i class="fa fa-angle-double-right"></i> Les stades</a></li>
+                                </ul>
+    					</li>
+                    </ul>
+                </div>
+                
+                <!-- COLONNE 4 FOOTER -->            
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <ul class="list-unstyled clear-margins">
+                    	<li class="widget-container widget_recent_news widget_nav_menu">
+                            <h1 class="title-widget">Nous contacter</h1>
+                            <div class="footerp"> 
+                                <ul>
+			                    	<li><a href="contact.html"><i class="fa fa-angle-double-right"></i> Contact</a></li>
+                                </ul>
+                                <p><b>Email :</b> <a href="mailto:adressmail">esl@gmail.com</a></p>
+                                <p><b>Telephone :</b> 06 74 39 32 13  </p>
+                                <p><b>Adresse Postale :</b></br>45 rue Maurice Ravel 29200 BREST</p>
+                            </div>
+                            <div class="social-icons">
+                            	<ul class="nomargin">
+                                    <a href="https://www.facebook.com/www.eslfoot.org/"><i class="fa fa-facebook-square fa-3x social-fb" id="social"></i></a>
+                                    <a href="mailto:adressmail"><i class="fa fa-envelope-square fa-3x social-em" id="social"></i></a>
+                                </ul>
+                            </div>
+                    	</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FOOTER COPYRIGHT DIGITAL DESIGN -->
+    <div class="footer-bottom">
+        <div class="container">
+        	<div class="row">
+        		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        			<div class="copyright">
+    					© 2017, Digital Design, All rights reserved
+        			</div>
+        		</div>
+        
+        		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        			<div class="design">
+    				    <p>Web Design & Development by Digital Design</p>
+    				</div>
+    			</div>
+    			
+    		</div>
+    	</div>
+    </div>
+      
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/admin.js"></script>
+
+    <script type="text/javascript">
+        if(typeof $.cookie('session') == 'undefined') $.cookie('session', false);
+    </script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+    
+    <!-- Google Maps -->
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+</body>
+
+</html>
